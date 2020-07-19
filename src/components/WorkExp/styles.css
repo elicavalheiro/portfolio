@@ -1,0 +1,73 @@
+.works {
+  margin-top: 230px;
+}
+
+.works::before {
+  content: "";
+  width: 300px;
+  height: 2px;
+  margin-top: 45px;
+  position: absolute;
+  background-color: var(--text-color);
+}
+
+.works h1 {
+  margin-left: 330px;
+  margin-bottom: 150px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-container::before {
+  content: "";
+  width: 2px;
+  height: 1100px;
+  top: 440vh;
+  position: absolute;
+  background-color: var(--text-color);
+}
+
+.work-job {
+  list-style: none;
+  margin-left: 30px;
+  margin-bottom: 350px;
+}
+
+.work-job h3 {
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.work-job::before {
+  content: "";
+  background-image: url("../../assets/work-before.svg");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: var(--bg-color);
+  left: 49%;
+}
+
+.work-job span {
+  margin-top: 50px;
+  opacity: 25%;
+}
+
+.work-list-left {
+  padding-right: 50px;
+}
+
+.work-list-left span,
+.work-list-left h3,
+.work-list-left h2 {
+  text-align: right;
+}
+
+.work-list-left span {
+  position: relative;
+  left: 63%;
+}
