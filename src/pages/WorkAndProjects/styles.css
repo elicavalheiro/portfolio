@@ -1,0 +1,40 @@
+.work-page {
+  margin-top: 5%;
+}
+
+.work-page h1::before {
+  content: "";
+  width: 20%;
+  height: 2px;
+  left: 0;
+  top: 50vh;
+  position: absolute;
+  background-color: var(--text-color);
+  visibility: hidden;
+}
+
+@keyframes work-page-animation {
+  0% { width: 0; }
+  100% { width: 20%; }
+}
+
+.work-page h1 {
+  color: rgba(241,241,241, 0.25);
+  font-size: 100px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-page h1:hover {
+  color: var(--text-color);
+  font-size: 200px;
+}
+
+.work-page h1:hover + h1::before {
+  visibility: visible;
+  animation-name: work-page-animation;
+  animation-duration: 0.8s;
+}
