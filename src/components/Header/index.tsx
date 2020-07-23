@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return(
     <header className="header">
-      <Link to="/" className="logo">Eli Cavalheiro</Link>
+      <Link to="/en" className="logo">Eli Cavalheiro</Link>
       <nav>
-        <Link to="/" className="selected">about</Link>
-        <Link to="work-projects">work & projects</Link>
+        <Link to="/en" className="selected">about</Link>
+        <Link to="/en/work-projects">work & projects</Link>
+        <Link to="/pt">PT</Link>
+        <Link to="/en" className="selected">EN</Link>
       </nav>
     </header>
   )

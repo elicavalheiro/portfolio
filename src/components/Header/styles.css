@@ -1,5 +1,5 @@
 .header {
-  padding: 50px 100px;
+  padding: 3% 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +7,7 @@
 
 .header::after {
   content: "";
-  width: 100px;
+  width: 8%;
   height: 1px;
   background-color: white;
   position: absolute;
@@ -18,7 +18,7 @@
 
 @keyframes header-animation {
   0% {width: 0;}
-  100% {width: 100px;}
+  100% {width: 8%;}
 }
 
 .header .logo {

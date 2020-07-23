@@ -13,7 +13,7 @@ const Contacts = () => {
         <a href="https://www.linkedin.com/in/elimaracavalheiro/">
           <FaLinkedinIn size={35} />
         </a>
-        <a href="#behancehttps://www.behance.net/elimaracavalhe">
+        <a href="https://www.behance.net/elimaracavalhe">
           <FaBehance size={35} />
         </a>
         <a href="https://github.com/elicavalheiro">

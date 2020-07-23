@@ -1,6 +1,6 @@
 @keyframes intro-line-animation {
   0% {width: 0px;}
-  100% {width: 430px;}
+  100% {width: 35%;}
 }
 
 @keyframes intro-image-animation {
@@ -19,10 +19,9 @@
 }
 
 .image {
-  height: 390px;
-  width: 330px;
-  animation-name: intro-image-animation
-;
+  height: 28%;
+  width: 26%;
+  animation-name: intro-image-animation;
   animation-duration: 2s;
 }
 
@@ -38,13 +37,13 @@
 
 .intro .intro-text {
   font-family: "Alegreya Sans SC", sans-serif;
-  padding-left: 150px;
+  padding-left: 10%;
   margin-top: 35px;
 }
 
 .intro .intro-text::after {
   content: "";
-  width: 430px;
+  width: 35%;
   height: 2px;
   margin-top: 5px;
   transform: rotate(-2.79deg);

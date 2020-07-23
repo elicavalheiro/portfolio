@@ -8,7 +8,7 @@ import Skills from '../../components/Skills';
 import WorkExp from '../../components/WorkExp';
 import Contacts from '../../components/Contacts';
 
-const Home = () => {
+const En_Home = () => {
   return(
     <main className="main">
       <Intro />
@@ -21,4 +21,4 @@ const Home = () => {
   )
 };
 
-export default Home;
+export default En_Home;
