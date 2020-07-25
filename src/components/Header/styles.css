@@ -1,5 +1,5 @@
 .header {
-  padding: 3% 8%;
+  padding: 5% 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,13 +23,15 @@
 
 .header .logo {
   font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .header a {
-  font-size: 16px;
+  font-size: 1.3em;
+  font-weight: 300;
   text-decoration: none;
   color: var(--text-color);
+  transition: all ease 1s;
 }
 
 .header nav a {
@@ -41,9 +43,11 @@
 
 .header nav a:hover {
   opacity: 100%;
+  font-weight: 400;
 }
 
 .header .selected {
   text-decoration: underline;
   opacity: 100%;
+  font-weight: 400;
 }

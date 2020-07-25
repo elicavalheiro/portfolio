@@ -1,10 +1,10 @@
 .works {
-  margin-top: 230px;
+  margin-top: 350px;
 }
 
 .works::before {
   content: "";
-  width: 300px;
+  width: 25%;
   height: 2px;
   margin-top: 45px;
   position: absolute;
@@ -12,12 +12,14 @@
 }
 
 .works h1 {
-  margin-left: 330px;
-  margin-bottom: 150px;
+  margin-left: 28%;
+  margin-bottom: 200px;
+  font-size: 6em;
 }
 
 .work-container {
   padding: 100px;
+  margin-bottom: 200px;
 }
 
 .work-list::after {
@@ -25,9 +27,9 @@
   position: absolute;
   width: 2px;
   background-color: var(--text-color);
-  height: 1130px;
+  height: 1300px;
   left: 50%;
-  top: 430vh;
+  top: 62%;
 }
 
 .work-job {
@@ -77,6 +79,16 @@
 }
 
 .content p {
-  opacity: 25%;
+  opacity: 50%;
   margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.content h3 {
+  font-size: 1.5em;
+}
+
+.content h2 {
+  font-size: 2em;
+  margin: 3px 0;
 }
