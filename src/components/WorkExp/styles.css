@@ -25,9 +25,9 @@
   position: absolute;
   width: 2px;
   background-color: var(--text-color);
-  height: 1150px;
+  height: 1130px;
   left: 50%;
-  top: 445vh;
+  top: 430vh;
 }
 
 .work-job {

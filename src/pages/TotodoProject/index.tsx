@@ -32,8 +32,8 @@ const TotodoProject = () => {
       </div>
 
       <nav className="project-nav">
-        <Link to="/en/work-projects"><IoMdArrowBack className="project-icon" />return to work & projects</Link>
-        <Link to="/en/work-projects/devcv">next project <IoMdArrowForward className="project-icon" /></Link>
+        <Link to="/projects"><IoMdArrowBack className="project-icon" />return to work & projects</Link>
+        <Link to="/projects/devcv">next project <IoMdArrowForward className="project-icon" /></Link>
       </nav>
 
       <footer className="project-footer">

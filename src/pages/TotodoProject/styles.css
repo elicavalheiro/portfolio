@@ -14,16 +14,7 @@
 }
 
 .totodo-image {
-<<<<<<< HEAD
   opacity: 0.8;
-=======
-  filter: grayscale(100%);
-  transition: all ease 0.5s;
-}
-
-.totodo-image:hover {
-  filter: none;
->>>>>>> 01c83d290570c78e208f94c32f35b1346bed1789
 }
 
 .project-page {

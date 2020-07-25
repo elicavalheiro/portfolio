@@ -5,8 +5,8 @@ import './styles.css';
 const WorkAndProjects = () => {
   return(
     <div className="work-page">
-      <Link to="/en/work-projects/totodo">.totodo</Link>
-      <Link to="/en/work-projects/devcv">DevCV</Link>
+      <Link to="/projects/totodo">.totodo</Link>
+      <Link to="/projects/devcv">DevCV</Link>
     </div>
   )
 }

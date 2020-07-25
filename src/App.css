@@ -15,4 +15,20 @@ body {
   font-family: Ubuntu, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(241,241,241);
+  border-radius: 15px;
 }

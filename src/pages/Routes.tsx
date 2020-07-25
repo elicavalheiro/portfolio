@@ -1,23 +1,39 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-
-import En_Home from '../pages/En_Home';
+import { Route, Switch, RouteProps, withRouter } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Home from '../pages/Home';
 import WorkAndProjects from '../pages/WorkAndProjects';
 import TotodoProject from '../pages/TotodoProject';
 import DevcvProject from '../pages/DevcvProject';
 
-const Routes = () => {
+import './Routes.css';
+
+interface IProps {
+  location: RouteProps["location"];
+}
+
+const Routes = ({ location }: IProps) => {
   return(
-    <Switch>
-      <Route path="/" exact={true}>
-        <Redirect to="/en" />
-      </Route>
-      <Route path="/en" exact={true} component={En_Home} />
-      <Route path="/en/work-projects" exact={true} component={WorkAndProjects} />
-      <Route path="/en/work-projects/totodo" component={TotodoProject} />
-      <Route path="/en/work-projects/devcv" component={DevcvProject} />
-    </Switch>
+    <>
+      <TransitionGroup className="transition-group">
+        <CSSTransition
+          key={location?.key}
+          appear={true}
+          timeout={{ enter: 1000, exit: 1000}}
+          classNames={'fade'}
+        >
+          <section className="route-section">
+            <Switch location={location}>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/projects" component={WorkAndProjects} />
+              <Route path="/projects/totodo" component={TotodoProject} />
+              <Route path="/projects/devcv" component={DevcvProject} />
+            </Switch>
+          </section>
+        </CSSTransition>
+      </TransitionGroup>
+    </>
   )
 }
 
-export default Routes;
+export default withRouter(Routes);
