@@ -7,8 +7,12 @@
   align-items: center;
 }
 
+.project-texts h1 {
+  font-size: 6em;
+}
+
 .project-texts p {
-  font-size: 2.2em;
+  font-size: 1.8em;
   margin-top: 50px;
   text-align: center;
 }
@@ -27,7 +31,7 @@
 
 .project-page a {
   color: var(--text-color);
-  font-size: 36px;
+  font-size: 2em;
 }
 
 .project-nav {
@@ -43,6 +47,7 @@
   color: var(--text-color);
   display: flex;
   align-items: center;
+  font-size: 1.5em;
 }
 
 .project-footer {
@@ -54,4 +59,47 @@
 
 .project-icon {
   margin: 0 5px;
+}
+
+@media screen and (max-width: 1000px){
+  .project-texts h1 {
+    font-size: 5em;
+  }
+
+  .project-texts p {
+    font-size: 1.5em;
+    padding: 0 10%;
+  }
+
+  .project-page a {
+    font-size: 1.8em;
+  }
+
+  .project-nav a {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .project-texts h1 {
+    font-size: 4em;
+  }
+
+  .project-texts p {
+    font-size: 1.3em;
+    padding: 0 6%;
+  }
+
+  .project-page a {
+    font-size: 1.5em;
+  }
+
+  .project-nav {
+    margin: 0 6%;
+    margin-bottom: 150px;
+  }
+
+  .project-nav a {
+    font-size: 1.2em;
+  }
 }

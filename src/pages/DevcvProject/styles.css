@@ -1,0 +1,106 @@
+.project-texts {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.project-texts h1 {
+  font-size: 6em;
+}
+
+.project-texts p {
+  font-size: 1.8em;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.totodo-image {
+  opacity: 0.8;
+}
+
+.project-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+
+.project-page a {
+  color: var(--text-color);
+  font-size: 2em;
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 150px;
+  margin-bottom: 150px;
+}
+
+.project-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-icon {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1000px){
+  .project-texts h1 {
+    font-size: 5em;
+  }
+
+  .project-texts p {
+    font-size: 1.5em;
+    padding: 0 10%;
+  }
+
+  .project-page a {
+    font-size: 1.8em;
+  }
+
+  .project-nav a {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .project-texts h1 {
+    font-size: 4em;
+  }
+
+  .project-texts p {
+    font-size: 1.3em;
+    padding: 0 6%;
+  }
+
+  .project-page a {
+    font-size: 1.5em;
+  }
+
+  .project-nav {
+    margin: 0 6%;
+    margin-bottom: 150px;
+  }
+
+  .project-nav a {
+    font-size: 1.2em;
+  }
+}

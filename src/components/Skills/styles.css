@@ -1,10 +1,11 @@
 .skills {
   margin-top: 350px;
-  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-container {
-  padding: 0 3%;
+  margin: 0 3%;
   margin-top: 150px;
 }
 
@@ -28,7 +29,7 @@
   content: "";
   width: 25%;
   height: 2px;
-  margin-top: 45px;
+  margin-top: 75px;
   right: 0;
   position: absolute;
   background-color: var(--text-color);
@@ -59,22 +60,21 @@
 
 .sixty-percent {
   width: 60%;
-  margin-right: 30%;
 }
 
 .eighty-percent {
   width: 80%;
-  margin-right: 30%;
 }
 
 .fifty-percent {
   width: 50%;
-  margin-right: 40%;
 }
 
 .skill-percentage {
   margin-top: 20px;
   font-size: 1.5em;
+  position: absolute;
+  margin-left: 19%;
 }
 
 .other-skills {
@@ -113,4 +113,77 @@
 
 .certificates strong {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1400px){
+  .skills h1 {
+    margin-left: 50%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .skills h1 {
+    margin-left: 35%;
+    margin-bottom: 0;
+  }
+
+  .skills h1::before {
+    width: 25%;
+  }
+
+  .skills-container {
+    margin: 100px 6%;
+  }
+
+  .skills-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-percentage {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .skills {
+    margin-top: 200px;
+  }
+
+  .skills h1 {
+    margin-left: 20%;
+    font-size: 5em;
+    margin-bottom: 0;
+  }
+
+  .skills h1::before {
+    width: 30%;
+    margin-top: 50px;
+  }
+
+  .skills-row {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-percentage {
+    margin-left: 70%;
+    font-size: 4vw;
+  }
+
+  .skill-container {
+    margin-top: 50px;
+  }
+
+  .other-skills p {
+    font-size: 5vw;
+  }
+
+  .skill-name {
+    font-size: 6vw;
+  }
+
+  .certificates li {
+    font-size: 5vw;
+    margin: 30px 6%;
+  }
 }

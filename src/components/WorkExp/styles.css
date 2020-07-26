@@ -29,7 +29,7 @@
   background-color: var(--text-color);
   height: 1300px;
   left: 50%;
-  top: 62%;
+  top: 60%;
 }
 
 .work-job {
@@ -86,9 +86,91 @@
 
 .content h3 {
   font-size: 1.5em;
+  font-weight: 300;
 }
 
 .content h2 {
   font-size: 2em;
   margin: 3px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .works h1 {
+    margin-bottom: 100px;
+    font-size: 5em;
+  }
+
+  .work-container {
+    padding: 50px;
+  }
+
+  .work-list::after {
+    height: 1250px;
+    left: 49%;
+    top: 59%;
+  }
+
+  .left::before {
+    left: 0;
+  }
+
+  .right::before {
+    left: -25px;
+  }
+
+  .content p {
+    font-size: 1.1em;
+  }
+
+  .content h3 {
+    font-size: 1.4em;
+  }
+
+  .content h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .works {
+    margin-top: 200px;
+  }
+
+  .works h1 {
+    font-size: 3em;
+  }
+
+  .work-container {
+    padding: 0 6%;
+  }
+
+  .work-list::after {
+    height: 1450px;
+    left: 49%;
+    top: 60%;
+  }
+
+  .left::before {
+    left: 5px;
+  }
+
+  .right::before {
+    left: -21px;
+  }
+
+  .content {
+    width: 49%;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .content h3 {
+    font-size: 1em;
+  }
+
+  .content h2 {
+    font-size: 1.2em;
+  }
 }

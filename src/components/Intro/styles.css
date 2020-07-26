@@ -34,3 +34,52 @@
   font-weight: 400;
   font-size: 4.5em;
 }
+
+@media all and (max-width: 1400px){
+  .intro .intro-text h1 {
+    font-size: 5em;
+  }
+
+  .intro .intro-text h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media all and (max-width: 1000px){
+  .intro .intro-text h1 {
+    font-size: 4em;
+  }
+
+  .intro .intro-text h2 {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .intro {
+    flex-direction: column;
+    padding: 0 6%;
+    margin-top: 50px;
+  }
+
+  .intro .intro-text {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .image {
+    width: 70%;
+  }
+
+  .intro .intro-text h1 {
+    font-size: 13vw;
+  }
+
+  .intro .intro-text h2 {
+    font-size: 10vw;
+  }
+
+  .intro .intro-text::after {
+    width: 80vw;
+  }
+}

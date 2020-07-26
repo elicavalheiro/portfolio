@@ -23,3 +23,36 @@
   position: absolute;
   background-color: var(--text-color);
 }
+
+@media screen and (max-width: 1400px){
+  .about h1 {
+    font-size: 6em;
+  }
+
+  .about p {
+    padding: 0 17%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .about h1 {
+    font-size: 5em;
+  }
+
+  .about p {
+    margin-top: 80px;
+    font-size: 1.6em;
+    padding: 0 12%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .about {
+    margin-top: 200px;
+  }
+
+  .about p {
+    padding: 0 6%;
+    font-size: 1.4em;
+  }
+}
